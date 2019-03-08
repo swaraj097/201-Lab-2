@@ -1,88 +1,142 @@
 'use strict';
 
 // // 1. Favorite Icecream
-// var favorite_icecream = prompt ('is swaraj\'s favorite icecream chocolate ?');
+var iceCream_fn = function () {
+  
 
-// var favorite_icecream_answer = 'yes' 
+  var favorite_icecream = prompt ('is swaraj\'s favorite icecream chocolate ?');
 
-// if (favorite_icecream === 'yes' || favorite_icecream === 'YES' || favorite_icecream === 'y' || favorite_icecream === 'Y'){
-//     alert('FANTASTIC !!!')
-// } else if (favorite_icecream === 'i dont know' || favorite_icecream === 'I DONT KNOW' ){
-//     alert('are you serious?')
-// } else if (favorite_icecream === 'no' || favorite_icecream === 'NO' || favorite_icecream === 'N' || favorite_icecream === 'n' ){
-//     alert( 'You have to be kidding me')
-// }
-// console.log ('This is the favorite icecream question')
+  favorite_icecream = favorite_icecream.toLowerCase();
 
-// //2. The Weather
-// var hows_the_weather = prompt ('is it raining in Seattle right now ?');
-// var hows_the_weather_answer = 'yes'
+  var wrong_icecream = 'no';
 
-// if (hows_the_weather === 'yes' || hows_the_weather === 'YES' || hows_the_weather === 'Y' || hows_the_weather === 'y'){
-// alert('thats a usual day')}
-// else if (hows_the_weather === 'no' || hows_the_weather === 'NO' || hows_the_weather === 'N' || hows_the_weather === 'n'   ){
-//     alert('wow thats a miracle')}
-// console.log ('Rain or no Rain in Seattle')
 
-// //3. Do you have a dog
-// var animal_pet = prompt ('are you a dog person?');
-// var animal_pet_answer = 'yes'
 
-// if (animal_pet === 'yes' || animal_pet === 'YES' || animal_pet === 'Y' || animal_pet === 'y'){
-//     alert('you must hate cats')}
-// else if (animal_pet === 'no' || animal_pet === 'NO' || animal_pet === 'N' || animal_pet === 'n'){
-//     alert('you must be a cat person')
-// }
-// console.log (' Dog or a Cat person')
+  if (favorite_icecream === wrong_icecream || favorite_icecream === 'n'){
+      alert('FANTASTIC !!!')
+  } 
+  else if (favorite_icecream === 'yes' || favorite_icecream === 'y'){
+      alert('are you serious?')
+  }
+}
+console.log ('This is the favorite icecream question')
+iceCream_fn();
 
-// //4. Drinking Beer
-// var drink_type = prompt (' do you drink beer?');
-// var drink_type_answer = 'yes'
 
-// if (drink_type === 'yes' || drink_type === 'YES' || drink_type === 'Y' || drink_type === 'y')
-// {alert('youre the man!!')}
-// else if(drink_type === 'NO' || drink_type === 'no' || drink_type === 'N' || drink_type === 'n'){
-// alert('you must like drinking whiskey')}
 
-// console.log ('Drinking whiskey or beer')
 
-// //5. Hiking
-// var nature_lover = prompt (' do you hike often?')
-// var nature_lover_answer = 'yes'
 
-// if (nature_lover === 'yes' || nature_lover === 'YES' || nature_lover === 'y' || nature_lover === 'Y')
-// {prompt (' where do you usually go?')};
-// {alert('thats awesome')}
 
-// if(nature_lover === 'NO' || nature_lover === 'no' || nature_lover === 'N' || nature_lover === 'n')
-// {alert('you should think about going for one')}
+//2. The Weather
+var weather_fn = function (){
+  var hows_the_weather = prompt ('is it raining in Seattle right now ?');
 
-// console.log ('if the person hikes or not')
+  var sunny_weather = 'yes';
 
-//6. How many beers can I drink?
+  hows_the_weather = hows_the_weather.toLowerCase();
 
-var beers = prompt ('how many beers can I drink')
- var msg;
- var roundnumber;
+  if (hows_the_weather === 'yes' || sunny_weather || hows_the_weather === 'y'){
+  alert('thats amzing!')}
+  else if (hows_the_weather === 'no' || hows_the_weather === 'n'   ){
+      alert('Thats usual')}
+  console.log ('Rain or no Rain in Seattle')
+}
+weather_fn();
 
-var i;
-for (i = 0; i < 10; i++){
-  switch(beers){
-    case '3': msg = 'You have to be kidding me'; break;
-    case '5': msg = 'you are not even close';break;
-    case '8': msg = 'are you drunk?'; break;
-    case '10': msg = ' Fantastic!!!'; break;
-    case '1': msg = 'No way'; break;
-    case '2': msg = 'Hell no'; break;
-    case '4': msg = 'do you even drink?'; break;
-    case '6': msg = 'you can do better'; break;
-    case '7': msg = 'Not even close'; break;
-    case '9': msg = 'youre getting there'; break;
-    if ( beers === 10){alert('Fantastic')}  
-    else if (beer > 10){alert('thats way too many')}
+
+
+
+
+  //3. Do you have a dog
+function animal_lover (){
+    var animal_pet = prompt ('are you a dog person?');
+    var animal_pet_answer = 'yes'
+
+    animal_pet = animal_pet.toLowerCase();
     
+    if (animal_pet === 'yes' || animal_pet_answer || animal_pet === 'y'){
+        alert('you must hate cats')}
+    else if (animal_pet === 'no' || animal_pet === 'n'){
+        alert('you must be a cat person')
+    }
+    console.log (' Dog or a Cat person')
+  }
+animal_lover();
 
-//beers === 1; beers ===2
 
-    document.write(i);
+
+
+
+
+
+
+//4. Drinking Beer
+function my_drink (){
+  var drink_type = prompt (' do you drink beer?');
+  var drink_type_answer = 'yes'
+
+  if (drink_type === 'yes' || drink_type === 'YES' || drink_type === 'Y' || drink_type === 'y')
+  {alert('youre the man!!')}
+  else if(drink_type === 'NO' || drink_type === 'no' || drink_type === 'N' || drink_type === 'n'){
+  alert('you must like drinking whiskey')}
+
+  console.log ('Drinking whiskey or beer')
+}
+my_drink();
+
+
+
+
+
+
+
+
+//5. Hiking
+function nature_boy (){
+  var nature_lover = prompt (' do you hike often?')
+  var nature_lover_answer = 'yes'
+
+  if (nature_lover === 'yes' || nature_lover === 'YES' || nature_lover === 'y' || nature_lover === 'Y')
+  {prompt (' where do you usually go?')};
+  {alert('thats awesome')}
+
+  if(nature_lover === 'NO' || nature_lover === 'no' || nature_lover === 'N' || nature_lover === 'n')
+  {alert('you should think about going for one')}
+
+  console.log ('if the person hikes or not')
+}
+nature_boy();
+
+
+
+
+
+
+
+
+
+// 6. How many beers can I drink?
+function my_beers (){
+  var beers = prompt ('how many beers can I drink')
+  var msg;
+  var roundnumber;
+
+  var i;
+  for (i = 0; i < 10; i++){
+
+
+      if ( beers === '9' ) {alert('Fantastic');
+      break;
+  }
+      if (beer === '10' || beer === '8'){
+        alert('thats way too many');
+        continue;
+        }
+      
+
+
+  //beers === 1; beers ===2
+
+      document.write(i);
+  }
 }
